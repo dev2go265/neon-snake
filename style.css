@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #04040f;
+  color: #eef2ff;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  text-align: center;
+}
+.wrap { max-width: 640px; margin: 0 auto; padding: 16px 12px 32px; }
+.title {
+  margin: 8px 0 2px;
+  font-size: 42px;
+  letter-spacing: 4px;
+  color: #39ff9c;
+  text-shadow: 0 0 18px rgba(57, 255, 156, .6);
+}
+.tagline { margin: 0 0 12px; color: #b9c4ff; font-size: 15px; }
+.game-box { position: relative; width: 100%; max-width: 600px; margin: 0 auto; }
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  background: #070722;
+  border: 2px solid #1f7a4d;
+  border-radius: 12px;
+  touch-action: none;
+  box-shadow: 0 0 32px rgba(57, 255, 156, .18);
+}
+.hud {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.settings { margin-top: 12px; font-size: 15px; }
+.settings input[type="range"] { width: min(320px, 80%); accent-color: #39ff9c; }
+.controls p { margin: 6px 0; font-size: 14px; color: #c9d1ff; }
+#start-btn {
+  margin-top: 10px;
+  padding: 12px 34px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #06130c;
+  background: #39ff9c;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+}
+#start-btn:hover { background: #7dffc4; }
+.foot { margin-top: 14px; font-size: 12px; color: #8b93b8; }
